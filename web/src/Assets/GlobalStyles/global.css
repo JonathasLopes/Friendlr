@@ -1,0 +1,70 @@
+:root {
+    --color-background: #FFFFFF;
+    --color-background-primary: #3ECED8;
+    --color-background-secondary: #E2FDFF;
+    --color-header: #4ABCC4;
+    --color-header-secondary: #55CED7;
+    --color-footer: #6DD4DC;
+    --color-primary: #EEFAFB;
+    --color-secondary: #E1FDFF;
+    --color-notification: #05EFFF;
+    --color-selected: #07B6C4;
+    --color-button-primary: #00747c;
+    --color-button-primary-hover: #154f53;
+    --color-button-secondary: #8EEDF3;
+    --color-button-secondary-hover: #ffffff;
+    --color-button-accept: #00EDFF;
+    --color-button-check: #55E7FB;
+    --color-button-cancel: #FFFFFF;
+    --color-button-send: #11E5A6;
+    --color-button-send-off: rgba(17, 229, 166, 0.38);
+    --color-selected-hover: rgba(0, 237, 255, 0.15);
+    --color-status-friend: #4ABCC4;
+    --color-status-following: #FF9992;
+    --color-status-add: #FFFFFF;
+    --color-status-you: #000000;
+    --color-status-pending: #00EEFF;
+    --color-text-primary: #000000;
+    --color-text-secondary: #999999;
+    --color-text-light: #FFFFFF;
+    --color-text-new: #3D787C;
+    --color-text-warning: #FF0000;
+    --color-text-search: #5A5A5A;
+    --color-icon-primary: #FFFFFF;
+    --color-icon-selected: #000000;
+    --color-icon-message: #4ABCC4;
+    --color-message: #11E5A6;
+    --color-voice: #0D986E;
+    --color-message-friend: #96E3E9;
+    --color-message-you: #FFFFFF;
+    --color-line-in-white: #FFFFFF;
+
+    font-size: 60%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100vh;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90vw;
+    max-width: 700px;
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%;
+    }
+}
