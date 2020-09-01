@@ -9,12 +9,14 @@ function landing() {
     return (
         <div id="page-landing">
             <div id="page-landing-content" className="container">
-                <div className="logo-container">
-                    <img src={LogoText} alt="FriendlrText" />
-                </div>
+                <div className="logo-container-page">
+                    <div className="logo-container">
+                        <img src={LogoText} alt="FriendlrText" />
+                    </div>
 
-                <div className="logoImg-container">
-                    <img src={LogoImg} alt="FriendlrImg" className="friend-image" />
+                    <div className="logoImg-container">
+                        <img src={LogoImg} alt="FriendlrImg" className="friend-image" />
+                    </div>
                 </div>
 
                 <div className="buttons-container">
@@ -26,10 +28,10 @@ function landing() {
                         Nova Conta
                     </Link >
                 </div>
-                <footer>
+            </div>
+            <footer id="foot">
                     Copyright © Jonathas Lopes
                 </footer>
-            </div>
         </div>
     );
 }

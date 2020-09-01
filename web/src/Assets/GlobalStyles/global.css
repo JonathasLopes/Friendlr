@@ -14,6 +14,7 @@
     --color-button-secondary: #8EEDF3;
     --color-button-secondary-hover: #ffffff;
     --color-button-accept: #00EDFF;
+    --color-button-accept-hover: #00eeffa1;
     --color-button-check: #55E7FB;
     --color-button-cancel: #FFFFFF;
     --color-button-send: #11E5A6;
@@ -56,11 +57,6 @@ html, body, #root {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.container {
-    width: 90vw;
-    max-width: 700px;
 }
 
 @media (min-width: 700px) {
