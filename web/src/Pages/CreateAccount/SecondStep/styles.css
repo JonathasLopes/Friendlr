@@ -1,0 +1,26 @@
+select {
+    width: 100%;
+    height: 3rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    outline-color: #cae7ff;
+}
+
+::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+button:first-child {
+    margin-right: 2rem;
+}
+
+#logo-second-step {
+    display: flex;
+    margin: 5rem 0 10rem;
+    justify-content: center;
+    align-items: center;
+}

@@ -20,11 +20,11 @@ function landing() {
                 </div>
 
                 <div className="buttons-container">
-                    <Link to="" className="Login">
+                    <Link to="/Login" className="Login">
                         Login
                     </Link>
 
-                    <Link to="/NewAccount" className="NewAccount">
+                    <Link to="/FirstStep" className="NewAccount">
                         Nova Conta
                     </Link >
                 </div>
