@@ -3,8 +3,7 @@ import { useHistory } from 'react-router-dom';
 import Logo from '../../../Assets/img/logo.svg';
 import './styles.css';
 import { Link } from 'react-router-dom';
-import See from '../../../Assets/img/See.svg';
-import NoSee from '../../../Assets/img/NoSee.svg';
+import { MdVisibility, MdVisibilityOff } from 'react-icons/md'
 
 function FirstStep() {
     const history = useHistory();
@@ -78,7 +77,7 @@ function FirstStep() {
                             <div className="pass">
                                 <input type={passwordShow ? "text" : "password"} id="password" defaultValue={infoStorage.Password} onChange={(e) => { setPassword(e.target.value) }} />
                                 <i onClick={togglePasswordVisiblity}>
-                                    { passwordShow ? <img src={See} alt="See" /> : <img src={NoSee} alt="NoSee" /> }
+                                    { passwordShow ? <MdVisibility size={24} style={{color: "white"}} /> : <MdVisibilityOff size={24} style={{color: "white"}} /> }
                                 </i>
                             </div>
                         </div>

@@ -1,0 +1,38 @@
+#title{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+#title h1{
+    color: white;
+    font-size: 5rem;
+}
+
+.perfil{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+span{
+    display: none;
+    font: 700 1.2rem Archivo;
+}
+
+.dropzone{
+    outline: none;
+}
+
+.dropzone:hover{
+    background: #fdfafa;
+}
+
+.dropzone:hover .icon{
+    display: none;
+}
+
+.dropzone:hover span{
+    display: inherit;
+}
