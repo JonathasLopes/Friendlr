@@ -1,19 +1,12 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Dropzone, { } from 'react-dropzone';
 import { DropContainer, UploadMessage } from './styles';
 import { RiImageAddFill } from 'react-icons/ri';
-import CircularProgressbar from 'react-circular-progressbar';
 
-export default class Upload extends Component {
+function Upload() {
+    const [img, setImage] = useState('');
 
-    constructor(props: any) {
-        super(props)
-        this.state = {
-            imageFiles: []
-        }
-    }
-
-    renderDragMessage = (isDragActive: any, isDragReject: any) => {
+    function renderDragMessage(isDragActive: any, isDragReject: any) {
         if (!isDragActive) {
             return <UploadMessage> <RiImageAddFill size={35} className="icon" /> <span>Adicione uma imagem!</span> </UploadMessage>
         }
@@ -24,16 +17,13 @@ export default class Upload extends Component {
         return <UploadMessage type="success">Solte sua foto aqui!</UploadMessage>
     }
 
-    onDrop(imageFiles: any) {
-        this.setState({
-            imageFiles: imageFiles
-        })
-        console.log(imageFiles);
+    const onDrop = (acceptFile: any) => {
+        setImage(acceptFile.map((file: any) => URL.createObjectURL(file)))
     }
 
-    render() {
-        return (
-            <Dropzone multiple={false} onDrop={this.onDrop.bind(this)} accept="image/png, image/jpeg, image/gif, image/jpg" onDropAccepted={() => { }}>
+    return (
+        <div>
+            <Dropzone multiple={false} onDrop={onDrop} accept="image/png, image/jpeg, image/gif, image/jpg" onDropAccepted={() => { }}>
                 {({ getRootProps, getInputProps, isDragActive, isDragReject }) => (
                     <DropContainer
                         {...getRootProps()}
@@ -42,10 +32,16 @@ export default class Upload extends Component {
                     >
                         <input {...getInputProps()} />
 
-                        {this.renderDragMessage(isDragActive, isDragReject)}
+                        {renderDragMessage(isDragActive, isDragReject)}
                     </DropContainer>
                 )}
             </Dropzone>
-        );
-    }
+            <div>
+                <img src={img} alt="" style={{ width: "100%" }} />
+            </div>
+        </div>
+    );
+
 }
+
+export default Upload;

@@ -60,20 +60,20 @@ function FirstStep() {
                     <fieldset>
 
                         <div className="input-block">
-                            <label htmlFor="name">Nome:</label>
+                            <label htmlFor="name">Nome</label>
                             <input type="text" id="name" placeholder="Your Name" defaultValue={infoStorage.Name} onChange={(e) => { setName(e.target.value) }} />
                         </div>
                         <div className="input-block">
-                            <label htmlFor="surname">Sobrenome:</label>
+                            <label htmlFor="surname">Sobrenome</label>
                             <input type="text" id="surname" placeholder="Your surname" defaultValue={infoStorage.Surname} onChange={(e) => { setSurname(e.target.value) }} />
                         </div>
                         <div className="input-block">
-                            <label htmlFor="email">Email:</label>
+                            <label htmlFor="email">Email</label>
                             <input type="text" id="email" placeholder="exemple@exemple.com" defaultValue={infoStorage.Email} onChange={(e) => { setEmail(e.target.value) }} />
 
                         </div>
                         <div className="input-block">
-                            <label htmlFor="password">Senha:</label>
+                            <label htmlFor="password">Senha</label>
                             <div className="pass">
                                 <input type={passwordShow ? "text" : "password"} id="password" defaultValue={infoStorage.Password} onChange={(e) => { setPassword(e.target.value) }} />
                                 <i onClick={togglePasswordVisiblity}>

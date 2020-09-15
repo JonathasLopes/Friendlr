@@ -1,14 +1,8 @@
-import React, { useState } from 'react';
-import Upload from '../../../Components/Upload';
+import React from 'react';
+import Upload from '../../../Components/Upload/index';
 import './styles.css';
 
 function ThirdStep() {
-    const [image, setImage] = useState('');
-
-    const infoThird = {
-
-    }
-
     return (
         <div id="page-content-account" className="container">
             <div id="title">

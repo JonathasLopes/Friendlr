@@ -13,7 +13,6 @@
     "axios": "^0.20.0",
     "country-list": "^2.2.0",
     "react": "^16.13.1",
-    "react-circular-progressbar": "^2.0.3",
     "react-country-region-selector": "^2.1.0",
     "react-dom": "^16.13.1",
     "react-dropzone": "^11.0.3",
