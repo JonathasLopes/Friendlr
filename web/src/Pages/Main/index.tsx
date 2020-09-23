@@ -24,7 +24,7 @@ function landing() {
                         Login
                     </Link>
 
-                    <Link to="/FirstStep" className="NewAccount">
+                    <Link to="/CreateAccount" className="NewAccount">
                         Nova Conta
                     </Link >
                 </div>

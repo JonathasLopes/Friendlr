@@ -5,6 +5,7 @@ import { RiImageAddFill } from 'react-icons/ri';
 
 function Upload() {
     const [img, setImage] = useState('');
+    const [preview, setPreview] = useState('');
 
     function renderDragMessage(isDragActive: any, isDragReject: any) {
         if (!isDragActive) {
@@ -18,7 +19,8 @@ function Upload() {
     }
 
     const onDrop = (acceptFile: any) => {
-        setImage(acceptFile.map((file: any) => URL.createObjectURL(file)))
+        setPreview(acceptFile.map((file: any) => URL.createObjectURL(file)));
+        setImage(acceptFile);
     }
 
     return (
@@ -37,7 +39,7 @@ function Upload() {
                 )}
             </Dropzone>
             <div>
-                <img src={img} alt="" style={{ width: "100%" }} />
+                <img src={preview} alt="" style={{ width: "100%" }} />
             </div>
         </div>
     );
