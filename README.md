@@ -31,7 +31,7 @@
 ### Autor
 ---
 
-<a href="https://blog.rocketseat.com.br/author/thiago/">
+<a href="https://www.linkedin.com/in/jhowlopes/">
  <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/54419270?s=400&u=c44f401e1945844cbe48aac0931a421fdc9e2804&v=4" width="100px;" alt=""/>
  <br />
  <sub><b>Jonathas Lopes</b></sub>
