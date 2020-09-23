@@ -12,4 +12,7 @@
     <img src="https://img.shields.io/github/license/JonathasLopes/Friendlr?color=%233ECED8" />
     <img src="https://img.shields.io/github/stars/JonathasLopes/Friendlr?color=yellow" />
 </span>
-[![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)](https://www.typescriptlang.org/)
+
+<a href="https://www.typescriptlang.org/">
+  <img src="https://forthebadge.com/images/badges/made-with-typescript.svg" />
+</a>
