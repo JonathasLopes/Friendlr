@@ -11,5 +11,9 @@
 <p align="center">
     <img src="https://img.shields.io/github/license/JonathasLopes/Friendlr?color=%233ECED8" />
     <img src="https://img.shields.io/github/stars/JonathasLopes/Friendlr?color=yellow" />
-    <img src="https://img.shields.io/badge/Made%20with-Typescript-blue" />
+    <a href="https://www.typescriptlang.org/">
+      <img src="https://img.shields.io/badge/Made%20with-Typescript-blue" />
+    </a>
+    <img src="https://img.shields.io/badge/Yarn-v1.22.0-yellowgreen" />
+    <img src="https://img.shields.io/badge/status-creating-orange" />
 </p>
