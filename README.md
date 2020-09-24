@@ -31,10 +31,8 @@
 ### Autor
 ---
 
-<a href="https://www.linkedin.com/in/jhowlopes/">
- <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/54419270?s=400&u=c44f401e1945844cbe48aac0931a421fdc9e2804&v=4" width="100px;" alt=""/>
+<a align="center" href="https://www.linkedin.com/in/jhowlopes/">
+ <img src="https://avatars2.githubusercontent.com/u/54419270?s=400&u=c44f401e1945844cbe48aac0931a421fdc9e2804&v=4" width="100px;" style="border-radius: 50%;" alt="Jonathas"/>
  <br />
  <sub><b>Jonathas Lopes</b></sub>
 </a>
-
-Feito por Jonathas Lopes!
