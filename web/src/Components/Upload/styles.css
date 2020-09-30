@@ -1,0 +1,27 @@
+.preview{
+    display: none;
+}
+
+.disabled{
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+
+.active{
+    width: 20rem;
+    height: 15rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40rem;
+    background-color: white;
+}
+
+.active img{
+    display: inline;
+    margin: 0 auto;
+    max-width: auto;
+    max-height: 100%;
+}

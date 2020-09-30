@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Logo from '../../../Assets/img/logo.svg';
 import './styles.css';
 import { useHistory } from 'react-router-dom';
 import { CountryDropdown, RegionDropdown } from 'react-country-region-selector';
@@ -37,8 +36,8 @@ function CreatePerfil() {
 
     return (
         <div id="page-content-account" className="container">
-            <div id="logo-second-step">
-                <img src={Logo} alt="Logo Friendlr" />
+            <div id="title">
+                <h1>Criando seu Perfil</h1>
             </div>
             <main>
                 <form onSubmit={next}>
@@ -46,7 +45,8 @@ function CreatePerfil() {
                         <div className="input-block" id="user">
                             <Upload />
                             <div className="user">
-                                <input type="text" id="username" defaultValue="" placeholder="Your Username" onChange={(e) => { setUsername(e.target.value) }} />
+                                <input type="text" autoComplete="off" id="username" className="input" placeholder=" " onChange={(e) => { setUsername(e.target.value) }} />
+                                <label htmlFor="username" className="label" id="labelPerfil">Username</label>
                             </div>
                         </div>
                         <div className="input-block">

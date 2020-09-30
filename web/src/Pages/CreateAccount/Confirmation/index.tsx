@@ -11,12 +11,12 @@ const confEmail = () => {
                 <img src={Logo} alt="Logo Friendlr" />
             </div>
             <main>
-                <p className="text">Um email foi enviado para “Contato@contato.com” para confirmação, olhe também em sua caixa de span ou na lixeira, caso não tenha recebido clique em “enviar novamente”!</p>
+                <p className="textConfirmation">Um email foi enviado para “Contato@contato.com” para confirmação, olhe também em sua caixa de span ou na lixeira, caso não tenha recebido clique em “enviar novamente”!</p>
                 <button className="resend">
                     <MdRefresh size={24} style={{color: "white"}} />
                     Enviar Novamente
                 </button>
-                <Link to="/">
+                <Link to="/" className="Goback">
                     Voltar
                 </Link>
             </main>

@@ -9,16 +9,7 @@ select {
 }
 
 ::-webkit-calendar-picker-indicator {
-    cursor: pointer;
-    background-color: white;
-    border-radius: 2rem;
-}
-
-#logo-second-step {
-    display: flex;
-    margin: 5rem 0 10rem;
-    justify-content: center;
-    align-items: center;
+    filter: invert(1);
 }
 
 #cell input:focus{
@@ -27,8 +18,73 @@ select {
     transform: none;
 }
 
+.dropzone{
+    outline: none;
+}
+
+.dropzone:hover{
+    background: #fdfafa;
+}
+
+.dropzone:hover .icon{
+    display: none;
+}
+
+.dropzone:hover span{
+    display: inherit;
+}
+
+#title{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 6rem 0 6rem;
+}
+
+#title h1{
+    color: white;
+    font: 700 5rem Poppins;
+}
+
+span{
+    display: none;
+    font: 700 1.2rem Archivo;
+}
+
+.input-block textarea{
+    width: 100%;
+    height: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border: 0;
+    color: var(--color-text-primary);
+    outline: none;
+    resize: none;
+    padding: 1rem 1rem;
+    font: 1.6rem Archivo;
+    transition: border .5s
+}
+
 @media (min-width: 1100px) {
     button:first-child {
         margin-right: 2rem;
-    }    
+    }
+
+    #user{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .user{
+        width: 100%;
+        margin-left: 2rem;
+    }
+    
+    #labelPerfil{
+        position: absolute;
+        left: 18rem;
+        top: 4rem;
+    }
 }
